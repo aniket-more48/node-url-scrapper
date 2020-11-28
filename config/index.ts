@@ -9,5 +9,5 @@ export default {
     redis_host: process.env.REDIS_HOST,
     redis_port: process.env.REDIS_PORT,
     redis_pass: process.env.REDIS_PASS,
-    allowedOrigins: ['http://localhost:3000', 'https://node-url-scrapper.herokuapp.com/', 'http://localhost:4020']
+    allowedOrigins: process.env.ALLOWED_ORIGINS
 };

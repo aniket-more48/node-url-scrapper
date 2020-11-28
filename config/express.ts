@@ -26,6 +26,8 @@ class Express {
          * Allow requests with no origin
          * Like mobile apps or curl requests
          */
+        console.log('origin', origin);
+        console.log('config.allowedOrigins', config.allowedOrigins);
         if (!origin) { return callback(null, true); }
         if (config.allowedOrigins.indexOf(origin) === -1) {
           const msg = `The CORS policy for this site does not
