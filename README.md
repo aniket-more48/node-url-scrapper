@@ -118,6 +118,17 @@ query {
 }
 ```
 
+## Postman Collection :
+
+URL : https://documenter.getpostman.com/view/4848118/TVmJhyRJ#91b1170f-9567-4410-927a-99967a907f4b
+
+
+## Heroku App : 
+
+URL : https://node-url-scrapper.herokuapp.com/graphql
+
+
+
 ## Features
 
 ### GraphQL
