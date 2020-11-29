@@ -11,6 +11,7 @@
   - [Step 2: Set up Env](#step-2-set-up-env)
   - [Step 3: Install dependencies](#step-3-install-dependencies)
   - [Step 4: Running Locally](#step-4-running-locally)
+  - [Step 5: Deployment Production](#step-5-deploy-in-prod-env)
 - [Features](#features)
   - [GraphQL](#graphql)
   - [Express](#express)
@@ -77,6 +78,14 @@ Navigate to the **Express Server** directory and run the below command in your t
 
 ```bash
 $ yarn start
+```
+
+### Step 5: Deployment
+
+Pending Docker Swamn and Terraform packaging
+
+```bash
+//TODO
 ```
 
 ## GraphQL Requests :
