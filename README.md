@@ -11,7 +11,6 @@
   - [Step 2: Set up Env](#step-2-set-up-env)
   - [Step 3: Install dependencies](#step-3-install-dependencies)
   - [Step 4: Running Locally](#step-4-running-locally)
-  - [Step 5: Deployment](#step-5-deployment)
 - [Features](#features)
   - [GraphQL](#graphql)
   - [Express](#express)
@@ -78,6 +77,45 @@ Navigate to the **Express Server** directory and run the below command in your t
 
 ```bash
 $ yarn start
+```
+
+## GraphQL Requests :
+
+Create a new User :
+
+```bash
+mutation {
+  createUser(userInput:{email:"admin@test.com",name:"admin",password:"abcd@1234"})
+  {
+    userId
+    token
+  }
+}
+```
+
+Login :
+
+```bash
+query {
+  login(email:"admin@test.com",password:"abcd@1234")
+  {
+    userId
+    token
+  }
+}
+```
+
+Get OG Meta Data :
+This API requires bearer token(from login query) to be passed as an Authentication header
+
+```bash
+query {
+  login(email:"admin@test.com",password:"abcd@1234")
+  {
+    userId
+    token
+  }
+}
 ```
 
 ## Features
