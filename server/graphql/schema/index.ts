@@ -11,8 +11,7 @@ const typeDefs = gql`
     users: [User!]!
     user(userId: ID!): User!
     login(email: String!, password: String!): AuthData!
-    urlscrapers: [UrlScaperData]
-    urlscraper(url: String): UrlScaperData
+    getOgMetadata(url: String): UrlScaperData
   }
   type Mutation {
     createUser(userInput: UserInput): AuthData!

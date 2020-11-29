@@ -3,7 +3,9 @@
 import { ApolloServer } from 'apollo-server-express';
 import cors from 'cors';
 import express from 'express';
+import expressWinston from 'express-winston';
 import * as http from 'http';
+import winston from 'winston';
 import schema from '../server/graphql/schema/index';
 import auth from '../server/middleware/auth';
 import config from './index';
@@ -17,6 +19,20 @@ class Express {
      * Creating an express application
      */
     this.express = express();
+
+    /**
+     * Adding Winston logger
+     */
+    this.express.use(expressWinston.logger({
+      transports: [
+        new winston.transports.Console()
+      ],
+      format: winston.format.combine(
+        winston.format.colorize(),
+        winston.format.json()
+      )
+    }));
+
     /**
      * Middlerware for using CORS
      */

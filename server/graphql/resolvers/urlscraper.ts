@@ -6,7 +6,7 @@ import parseUrl from './../../../utility/opscraper';
  * UrlScraper Queries
  */
 const UrlScraperQueries = {
-    urlscraper: async (parent, { url }, context) => {
+    getOgMetadata: async (parent, { url }, context) => {
         try {
             // If not authenticated throw error
             if (!context.isAuth) {
