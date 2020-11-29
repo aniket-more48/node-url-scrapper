@@ -11,7 +11,7 @@
   - [Step 2: Set up Env](#step-2-set-up-env)
   - [Step 3: Install dependencies](#step-3-install-dependencies)
   - [Step 4: Running Locally](#step-4-running-locally)
-  - [Step 5: Deployment Production](#step-5-deploy-in-prod-env)
+  - [Step 5: Deployment Production](#step-5-deployment)
 - [Features](#features)
   - [GraphQL](#graphql)
   - [Express](#express)
