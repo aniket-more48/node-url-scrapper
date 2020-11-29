@@ -14,7 +14,7 @@
     "prestart": "yarn build",
     "start": "tsc --watch & nodemon dist/index.js",
     "test": "jest --testTimeout=10000",
-    "pre-commit": "yarn tslint && yarn build",
+    "pre-commit": "yarn test && yarn tslint && yarn build",
     "tslint": "tslint --project tsconfig.json",
     "tslint:fix": "tslint --project tsconfig.json --fix"
   },
@@ -48,7 +48,7 @@
     "@types/lodash": "^4.14.149",
     "@types/mongoose": "^5.5.41",
     "@types/node": "^13.1.7",
-    "husky": "^4.2.0",
+    "husky": "^4.3.0",
     "jest": "^26.6.3",
     "nodemon": "^1.19.2",
     "ts-jest": "^26.4.4",
