@@ -1,6 +1,6 @@
 <h1 align="center">Next.js React GraphQL Express Apollo Boilerplate</h1>
 
-<p align="center">Performance oriented NodeJS application boilerplate with Typescript, Express.js, GraphQL, Apollo, MongoDB and Redis
+<p align="center">Performance oriented NodeJS application boilerplate with Typescript, Express.js, GraphQL, Apollo, MongoDB and Redis .
 </p>
 
 ## Table of Contents
